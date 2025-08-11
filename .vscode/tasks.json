@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build cpp",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-DUNICODE",
+                "-D_UNICODE",
+                "main.cpp",
+                "-o",
+                "main.exe",
+                "-lwinmm"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
